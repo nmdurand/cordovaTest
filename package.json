@@ -1,0 +1,13 @@
+{
+  "name": "cordovatest",
+  "displayName": "CordovaTest",
+  "version": "1.0.0",
+  "description": "My tests in Cordova",
+  "main": "index.js",
+  "devDependencies": {
+    "cordova": "^6.5.0"
+  },
+  "dependencies": {
+    "requirejs": "^2.3.5"
+  }
+}
