@@ -35,16 +35,16 @@ var app = {
 
 
 		var myButton = document.getElementById('myButton0');
-		myButton.addEventListener('click', app.startAndroid1);
+		myButton.addEventListener('click', app.startIOS1);
 
 		var myButton = document.getElementById('myButton1');
-		myButton.addEventListener('click', app.startAndroid2);
+		myButton.addEventListener('click', app.startIOS2);
 
 		var myButton2 = document.getElementById('myButton2');
-		myButton2.addEventListener('click', app.startAndroid3);
+		myButton2.addEventListener('click', app.startIOS3);
 		//
 		var myButton3 = document.getElementById('myButton3');
-		myButton3.addEventListener('click', app.startAndroid4);
+		myButton3.addEventListener('click', app.startIOS4);
 
 		console.log("Cordova file object:",cordova.file);
 		console.log("Local storage:",cordova.file.applicationDirectory);
