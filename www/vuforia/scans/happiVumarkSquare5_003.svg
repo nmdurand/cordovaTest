@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" height="340.2px" style="enable-background:new 0 0 340.2 340.2;" version="1.1" viewBox="0 0 340.2 340.2" width="340.2px" x="0px" y="0px" xml:space="preserve">
+<g id="VuMark-ClearSpace">
+	<rect height="339.2" style="fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;" width="339.2" x="0.5" y="0.5" />
+</g>
+<g id="VuMark-Border">
+	<path d="M29.3,10.1v19.2H10.1v300.8h320v-320H29.3z M19.7,310.9v-272h19.2V19.7h281.6v291.2H19.7z" />
+</g>
+<g id="VuMark-Background">
+</g>
+<g id="VuMark-DarkElements">
+	<rect height="9.6" id="d0001" width="9.6" x="29.3" y="310.9" />
+	<rect height="9.6" id="d0003_1_" width="9.6" x="48.5" y="310.9" />
+	<rect height="9.6" id="d0007_1_" width="9.6" x="86.9" y="310.9" />
+	<rect height="9.6" id="d0009" width="9.6" x="106.1" y="310.9" />
+	<rect height="9.6" id="d0011_1_" width="9.6" x="125.3" y="310.9" />
+	<rect height="9.6" id="d0012_1_" width="9.6" x="134.9" y="310.9" />
+	<rect height="9.6" id="d0013_1_" width="9.6" x="144.5" y="310.9" />
+	<rect height="9.6" id="d0014_1_" width="9.6" x="154.1" y="310.9" />
+<rect height="9.6" id="d0015" width="9.6" x="163.7" y="310.9" />
+	<rect height="9.6" id="d0016" width="9.6" x="173.3" y="310.9" />
+	<rect height="9.6" id="d0018" width="9.6" x="192.5" y="310.9" />
+	<rect height="9.6" id="d0021" width="9.6" x="221.3" y="310.9" />
+	<rect height="9.6" id="d0022" width="9.6" x="230.9" y="310.9" />
+	<rect height="9.6" id="d0023" width="9.6" x="240.5" y="310.9" />
+	<rect height="9.6" id="d0024" width="9.6" x="250.1" y="310.9" />
+	<rect height="9.6" id="d0025" width="9.6" x="259.7" y="310.9" />
+	<rect height="9.6" id="d0027" width="9.6" x="278.9" y="310.9" />
+	<rect height="9.6" id="d0028" width="9.6" x="288.5" y="310.9" />
+	<rect height="9.6" id="d0029" width="9.6" x="298.1" y="310.9" />
+	</g>
+<g id="VuMark-BrightElements">
+	<rect height="9.6" id="b0000" style="fill:#FFFFFF;" width="9.6" x="19.7" y="310.9" />
+	<rect height="9.6" id="b0002" style="fill:#FFFFFF;" width="9.6" x="38.9" y="310.9" />
+	<rect height="9.6" id="b0004" style="fill:#FFFFFF;" width="9.6" x="58.1" y="310.9" />
+	<rect height="9.6" id="b0005" style="fill:#FFFFFF;" width="9.6" x="67.7" y="310.9" />
+	<rect height="9.6" id="b0006" style="fill:#FFFFFF;" width="9.6" x="77.3" y="310.9" />
+	<rect height="9.6" id="b0008" style="fill:#FFFFFF;" width="9.6" x="96.5" y="310.9" />
+	<rect height="9.6" id="b0010" style="fill:#FFFFFF;" width="9.6" x="115.7" y="310.9" />
+	<rect height="9.6" id="b0017" style="fill:#FFFFFF;" width="9.6" x="182.9" y="310.9" />
+	<rect height="9.6" id="b0019" style="fill:#FFFFFF;" width="9.6" x="202.1" y="310.9" />
+	<rect height="9.6" id="b0020" style="fill:#FFFFFF;" width="9.6" x="211.7" y="310.9" />
+	<rect height="9.6" id="b0026" style="fill:#FFFFFF;" width="9.6" x="269.3" y="310.9" />
+	<rect height="9.6" id="b0030" style="fill:#FFFFFF;" width="9.6" x="307.7" y="310.9" />
+	</g>
+</svg>

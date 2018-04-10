@@ -1,0 +1,25 @@
+{
+	"ios": {
+		"release": {
+			"developmentTeam": "X7KUMDGD7V",
+			"codeSignIdentitiy": "Launcher",
+			"provisioningProfile": "349b246a-9294-453c-952f-403452964b54",
+			"packageType": "enterprise"
+		},
+		"debug": {
+			"developmentTeam": "X7KUMDGD7V",
+			"codeSignIdentitiy": "Happinov",
+			"provisioningProfile": "b931a566-5b72-4580-9bb9-0953749856cf",
+			"packageType": "development"
+		}
+	},
+	"android": {
+		"release": {
+			"keystoreType": "jks",
+			"keystore": "path/to/store",
+			"storePassword": "",
+			"alias": "happinov",
+			"password" : ""
+		}
+	}
+}

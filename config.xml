@@ -17,6 +17,6 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-file" spec="~4.3.3" />
-    <plugin name="cordova-plugin-overlayedphoto" spec="../cordova-plugin-overlayedphoto" />
-    <plugin name="cordova-plugin-overlayedview" spec="../cordova-plugin-overlayedview" />
+    <engine name="ios" spec="^4.5.4" />
+    <plugin name="cordova-plugin-vuforia-ar" spec="../cordova-plugin-vuforia-ar" />
 </widget>
