@@ -1,0 +1,47 @@
+#container{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+	align-items: center;
+}
+.resultWrapper{
+	height:50%;
+	width:100%;
+	display:flex;
+}
+.buttonWrapper{
+	height:50%;
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.testButton{
+	background-color:lightgrey;
+	color:white;
+	height:100px;
+	width:300px;
+	font-size:30px;
+	border-radius:4px;
+}
+
+.resultClick{
+	height:100%;
+	width:50%;
+	text-align:right;
+	padding:20px;
+}
+.resultTouchend{
+	height:100%;
+	width:50%;
+	text-align:left;
+	padding:20px;
+}
+.clickElement, .touchendElement{
+	font-size:20px;
+}
