@@ -28,15 +28,17 @@
 
         <div id="container">
 			<div class="resultWrapper">
-				<div class="resultClick"></div>
-				<div class="resultTouchend"></div>
+				<div class="resultClick">CLICK</div>
+				<div class="resultTouchstart">START</div>
+				<div class="resultTouchend">END</div>
+				<div class="resultTouchcancel">CANCEL</div>
 			</div>
 			<div class="buttonWrapper">
 				<div class="testButton" type="button" name="button">CLICK ME</div>
 			</div>
         </div>
 
-
+		<script type='application/javascript' src='../node_modules/fastclick/lib/fastclick.js'></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>

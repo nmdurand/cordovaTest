@@ -9,6 +9,10 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <feature name="CDVWKWebViewEngine">
+        <param name="ios-package" value="CDVWKWebViewEngine" />
+    </feature>
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
@@ -18,5 +22,5 @@
     </platform>
     <plugin name="cordova-plugin-file" spec="~4.3.3" />
     <engine name="ios" spec="^4.5.4" />
-    <plugin name="cordova-plugin-vuforia-ar" spec="../cordova-plugin-vuforia-ar" />
+    <plugin name="cordova-plugin-wkwebview-engine" spec="~1.1.4" />
 </widget>
