@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="fr.happinov.cordovatest" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>CordovaTest</name>
+    <name>CordovaStatusBarTest</name>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -9,6 +9,10 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="BackupWebStorage" value="none"/>
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarStyle" value="lightcontent" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
@@ -16,7 +20,8 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova-plugin-file" spec="~4.3.3" />
-    <plugin name="cordova-plugin-overlayedphoto" spec="../cordova-plugin-overlayedphoto" />
-    <plugin name="cordova-plugin-overlayedview" spec="../cordova-plugin-overlayedview" />
+    <engine name="ios" spec="~4.5.5" />
+    <plugin name="cordova-plugin-file" spec="^6.0.1" />
+    <plugin name="cordova-plugin-overlayedphoto" spec="git+ssh://git@bitbucket.org/happinov/cordova-plugin-overlayedphoto.git#2.1.9" />
+    <plugin name="cordova-plugin-statusbar" spec="~2.2.1" />
 </widget>
