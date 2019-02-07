@@ -40,61 +40,30 @@ body {
 	justify-content: center;
 }
 
-/* Portrait layout (default) */
-.app {
-    text-align:center;
-	flex-direction: column;
-	display: flex;
-	background-image:'../img/overlayPortrait.png';
+#container{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap:wrap;
+	background-color:grey;
 }
-
-button{
-	font-size:40px;
-	margin-top:1em;
+.videoElement{
+	/* background-color:#FF1010; */
+	background-color:transparent;
 }
-
-
-h1 {
-    font-size:34px;
-    font-weight:normal;
-    margin:0 0 20px 0;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
-}
-
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
-}
-
-.event.listening {
-    background-color:#333333;
-    display:block;
-}
-
-.event.received {
-    background-color:#4B946A;
-    display:none;
-}
-
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
-
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
-
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+.button{
+	height:100px;
+	width:200px;
+	background-color:lightGreen;
+	color:white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-decoration: none;
 }
