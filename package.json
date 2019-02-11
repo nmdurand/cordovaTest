@@ -5,9 +5,21 @@
   "description": "My tests in Cordova",
   "main": "index.js",
   "devDependencies": {
-    "cordova": "^6.5.0"
+    "cordova": "^8.1.2"
   },
   "dependencies": {
+    "cordova-ios": "^4.5.4",
+    "cordova-plugin-layouthelper": "git+ssh://git@bitbucket.org/happinov/cordova-plugin-layouthelper.git",
+    "cordova-plugin-vuforia": "file:///Users/nicod/Development/projects/happi/cordova-plugin-vuforia",
+    "cordova-plugin-vuforia-sdk-7-5-20": "git+ssh://git@bitbucket.org/coqsenpate/cordova-plugin-vuforia-sdk-7-5-20.git",
     "requirejs": "^2.3.5"
+  },
+  "cordova": {
+    "platforms": [
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-vuforia": {}
+    }
   }
 }

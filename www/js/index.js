@@ -35,16 +35,16 @@ var app = {
 
 
 		var myButton = document.getElementById('myButton0');
-		myButton.addEventListener('click', app.startAndroid1);
+		myButton.addEventListener('click', app.startIOS1);
 
-		var myButton = document.getElementById('myButton1');
-		myButton.addEventListener('click', app.startAndroid2);
-
-		var myButton2 = document.getElementById('myButton2');
-		myButton2.addEventListener('click', app.startAndroid3);
+		// var myButton = document.getElementById('myButton1');
+		// myButton.addEventListener('click', app.startAndroid2);
 		//
-		var myButton3 = document.getElementById('myButton3');
-		myButton3.addEventListener('click', app.startAndroid4);
+		// var myButton2 = document.getElementById('myButton2');
+		// myButton2.addEventListener('click', app.startAndroid3);
+		// //
+		// var myButton3 = document.getElementById('myButton3');
+		// myButton3.addEventListener('click', app.startAndroid4);
 
 		console.log("Cordova file object:",cordova.file);
 		console.log("Local storage:",cordova.file.applicationDirectory);
@@ -63,271 +63,271 @@ var app = {
 
 		var options = {
 			vuforiaLicense: vuforiaLicenseKey,
-			databaseXmlFile: cordova.file.applicationDirectory+'www/vuforia/happiVumark.xml',
-			// globalOverlay: cordova.file.applicationDirectory+'www/img/overlay-VVV.png',
-			// globalOverlay: '',
-			// globalOverlayMode:'stretch',
-			// globalOverlayMode:'stretch',
-			// closeButtonMode:'',
-			overlayImageFolder:  cordova.file.applicationDirectory+'www/vuforia/overlays/happiVumark/',
-			targetList:[
-				"vumark-0",
-				"vumark-13",
-				"vumark-28",
-				"vumark-39"
-			],
-			maxSimultaneousTargets:2
-		};
-		console.log('Launching camera with options:', options);
-		VuforiaAR.openFinder(options, app.viewSuccess, app.viewFailure);
-	},
-
-
-	startIOS2: function() {
-		console.log("Let's play with AR!");
-
-		var options = {
-			vuforiaLicense: vuforiaLicenseKey,
 			databaseXmlFile: cordova.file.applicationDirectory+'www/vuforia/happinovTestAR.xml',
-			// globalOverlay: cordova.file.applicationDirectory+'www/img/overlay-VVV.png',
-			// globalOverlay: '',
-			// globalOverlayMode:'stretch',
-			// closeButtonMode:'',
-			overlayImageFolder:  cordova.file.applicationDirectory+'www/vuforia/overlays/happinovTestAR/',
-			// hideCloseButton:false
-			targetList:[
-				"Es11BondJamesBond",
-				"Es12Identification",
-				"Es20FemmesFatales",
-				"EsAgent2",
-				"EsAgent3"
-			],
+			overlayMappingOverride:{
+				Es11BondJamesBond:{
+					overlay: cordova.file.applicationDirectory+'www/vuforia/overlays/happiVumark/vumark-0.jpg'},
+				Es12Identification:{
+					overlay: cordova.file.applicationDirectory+'www/vuforia/overlays/happiVumark/vumark-0.jpg'},
+				Es20FemmesFatales:{
+					overlay: cordova.file.applicationDirectory+'www/vuforia/overlays/happiVumark/vumark-0.jpg'},
+				EsAgent2:{
+					overlay: cordova.file.applicationDirectory+'www/vuforia/overlays/happiVumark/vumark-0.jpg'},
+				EsAgent3:{
+					overlay: cordova.file.applicationDirectory+'www/vuforia/overlays/happiVumark/vumark-0.jpg'}
+			},
 			maxSimultaneousTargets:2
 		};
 		console.log('Launching camera with options:', options);
-		VuforiaAR.openFinder(options, app.viewSuccess, app.viewFailure);
+		Vuforia.openFinder(options, app.viewSuccess, app.viewFailure);
 	},
 
-
-	startIOS3: function() {
-		console.log("Let's play with AR!");
-
-		var options = {
-			vuforiaLicense: vuforiaLicenseKey,
-			databaseXmlFile: cordova.file.applicationDirectory+'www/vuforia/MortonTuxedos.xml',
-			// globalOverlay: '',
-			// globalOverlayMode:'',
-			// closeButtonMode:'invisible',
-			// globalOverlay: cordova.file.applicationDirectory+'www/img/overlay-HHH.png',
-			// globalOverlayMode:'cover',
-			// hideCloseButton:false,
-			overlayImageFolder:  cordova.file.applicationDirectory+'www/vuforia/overlays/mortonTux/',
-			targetList:[
-				"vumark-0000",
-				"vumark-1111",
-				"vumark-2222",
-				"vumark-3333",
-				"vumark-4444",
-				"vumark-5555",
-				"vumark-6666",
-				"vumark-7777",
-				"vumark-8888",
-				"vumark-9999",
-				"vumark-aaaa",
-				"vumark-bubu",
-				"vumark-caca",
-				"vumark-coco",
-				"vumark-dada",
-				"vumark-eeee",
-				"vumark-iiii",
-				"vumark-mama",
-				"vumark-mamy",
-				"vumark-mimi",
-				"vumark-oooo",
-				"vumark-papa",
-				"vumark-papy",
-				"vumark-pipi",
-				"vumark-popo"
-			]
-			// ],
-			// maxSimultaneousTargets:10
-		};
-		console.log('Launching camera with options:', options);
-		VuforiaAR.openFinder(options, app.viewSuccess, app.viewFailure);
-	},
-	startIOS4: function() {
-		console.log("Let's play with AR!");
-
-		var options = {
-			vuforiaLicense: vuforiaLicenseKey,
-			databaseXmlFile: cordova.file.applicationDirectory+'www/vuforia/MortonTuxedos.xml',
-			// globalOverlay: cordova.file.applicationDirectory+'www/img/overlay-HHH.png',
-			// globalOverlayMode:'contain',
-			// closeButtonMode:'invisible',
-			// hideCloseButton:false,
-			// overlayImageFolder:  cordova.file.applicationDirectory+'www/vuforia/overlays/',
-			targetList:[
-				"vumark-0000",
-				"vumark-1111",
-				"vumark-2222",
-				"vumark-3333",
-				"vumark-4444",
-				"vumark-5555",
-				"vumark-6666",
-				"vumark-7777",
-				"vumark-8888",
-				"vumark-9999",
-				"vumark-aaaa",
-				"vumark-bubu",
-				"vumark-caca",
-				"vumark-coco",
-				"vumark-dada",
-				"vumark-eeee",
-				"vumark-iiii",
-				"vumark-mama",
-				"vumark-mamy",
-				"vumark-mimi",
-				"vumark-oooo",
-				"vumark-papa",
-				"vumark-papy",
-				"vumark-pipi",
-				"vumark-popo"
-			],
-			maxSimultaneousTargets:2
-		};
-		console.log('Launching camera with options:', options);
-		VuforiaAR.openIRFinder(options, app.viewSuccess, app.viewFailure);
-	},
-
-
-
-
-
-	startAndroid1: function() {
-		console.log("Let's start this overlayed view!");
-
-		var viewOptions = {
-			vuforiaLicense: vuforiaLicenseKey,
-			// databaseXmlFile: cordova.file.applicationStorageDirectory+'vuforia/Vuforia.xml',
-			databaseXmlFile: cordova.file.externalApplicationStorageDirectory+'files/happiVumark.xml',
-			// globalOverlay: cordova.file.externalApplicationStorageDirectory+'files/overlay-VVV.png',
-			// globalOverlayMode:'stretch',
-			// closeButtonMode:'',
-			overlayImageFolder:  cordova.file.externalApplicationStorageDirectory+'files/overlays/happiVumark/',
-			targetList:[
-				"vumark-0",
-				"vumark-13",
-				"vumark-28",
-				"vumark-39"
-			],
-			maxSimultaneousTargets:2
-		};
-		VuforiaAR.openFinder(viewOptions, app.viewSuccess, app.viewFailure);
-	},
-	startAndroid2: function() {
-		console.log("Let's start this overlayed view!");
-
-		var viewOptions = {
-			vuforiaLicense: vuforiaLicenseKey,
-			databaseXmlFile: cordova.file.externalApplicationStorageDirectory+'files/happinovTestAR.xml',
-			// globalOverlay: cordova.file.externalApplicationStorageDirectory+'files/overlay-VVV.png',
-			overlayImageFolder:  cordova.file.externalApplicationStorageDirectory+'files/overlays/happinovTestAR/',
-			// globalOverlayMode:'cover',
-			// closeButtonMode:'transparent',
-			targetList:[
-				"Es11BondJamesBond",
-				"Es12Identification",
-				"Es20FemmesFatales",
-				"EsAgent2",
-				"EsAgent3"
-			],
-			maxSimultaneousTargets:2
-		};
-		VuforiaAR.openFinder(viewOptions, app.viewSuccess, app.viewFailure);
-	},
-	startAndroid3: function() {
-		console.log("Let's start this overlayed view!");
-
-		var viewOptions = {
-			vuforiaLicense: vuforiaLicenseKey,
-			databaseXmlFile: cordova.file.externalApplicationStorageDirectory+'files/MortonTuxedos.xml',
-			// globalOverlay: cordova.file.externalApplicationStorageDirectory+'files/overlay-HHH.png',
-			// globalOverlay:'',
-			// globalOverlayMode:'',
-			// closeButtonMode:'',
-			overlayImageFolder:  cordova.file.externalApplicationStorageDirectory+'files/overlays/mortonTux/',
-			targetList:[
-				"vumark-0000",
-				"vumark-1111",
-				"vumark-2222",
-				"vumark-3333",
-				"vumark-4444",
-				"vumark-5555",
-				"vumark-6666",
-				"vumark-7777",
-				"vumark-8888",
-				"vumark-9999",
-				"vumark-aaaa",
-				"vumark-bubu",
-				"vumark-caca",
-				"vumark-coco",
-				"vumark-dada",
-				"vumark-eeee",
-				"vumark-iiii",
-				"vumark-mama",
-				"vumark-mamy",
-				"vumark-mimi",
-				"vumark-oooo",
-				"vumark-papa",
-				"vumark-papy",
-				"vumark-pipi",
-				"vumark-popo"
-			]
-			// ],
-			// maxSimultaneousTargets:2
-		};
-		VuforiaAR.openFinder(viewOptions, app.viewSuccess, app.viewFailure);
-	},
-	startAndroid4: function() {
-		console.log("Let's start this overlayed view!");
-
-		var viewOptions = {
-			vuforiaLicense: vuforiaLicenseKey,
-			databaseXmlFile: cordova.file.externalApplicationStorageDirectory+'files/MortonTuxedos.xml',
-			// globalOverlay: cordova.file.externalApplicationStorageDirectory+'files/overlay-HHH.png',
-			// globalOverlayMode:'contain',
-			// closeButtonMode:'invisible',
-			targetList:[
-				"vumark-0000",
-				"vumark-1111",
-				"vumark-2222",
-				"vumark-3333",
-				"vumark-4444",
-				"vumark-5555",
-				"vumark-6666",
-				"vumark-7777",
-				"vumark-8888",
-				"vumark-9999",
-				"vumark-aaaa",
-				"vumark-bubu",
-				"vumark-caca",
-				"vumark-coco",
-				"vumark-dada",
-				"vumark-eeee",
-				"vumark-iiii",
-				"vumark-mama",
-				"vumark-mamy",
-				"vumark-mimi",
-				"vumark-oooo",
-				"vumark-papa",
-				"vumark-papy",
-				"vumark-pipi",
-				"vumark-popo"
-			],
-			maxSimultaneousTargets:2
-		};
-		VuforiaAR.openIRFinder(viewOptions, app.viewSuccess, app.viewFailure);
-	},
+	//
+	// startIOS2: function() {
+	// 	console.log("Let's play with AR!");
+	//
+	// 	var options = {
+	// 		vuforiaLicense: vuforiaLicenseKey,
+	// 		databaseXmlFile: cordova.file.applicationDirectory+'www/vuforia/happinovTestAR.xml',
+	// 		// globalOverlay: cordova.file.applicationDirectory+'www/img/overlay-VVV.png',
+	// 		// globalOverlay: '',
+	// 		// globalOverlayMode:'stretch',
+	// 		// closeButtonMode:'',
+	// 		overlayImageFolder:  cordova.file.applicationDirectory+'www/vuforia/overlays/happinovTestAR/',
+	// 		// hideCloseButton:false
+	// 		targetList:[
+	// 			"Es11BondJamesBond",
+	// 			"Es12Identification",
+	// 			"Es20FemmesFatales",
+	// 			"EsAgent2",
+	// 			"EsAgent3"
+	// 		],
+	// 		maxSimultaneousTargets:2
+	// 	};
+	// 	console.log('Launching camera with options:', options);
+	// 	VuforiaAR.openFinder(options, app.viewSuccess, app.viewFailure);
+	// },
+	//
+	//
+	// startIOS3: function() {
+	// 	console.log("Let's play with AR!");
+	//
+	// 	var options = {
+	// 		vuforiaLicense: vuforiaLicenseKey,
+	// 		databaseXmlFile: cordova.file.applicationDirectory+'www/vuforia/MortonTuxedos.xml',
+	// 		// globalOverlay: '',
+	// 		// globalOverlayMode:'',
+	// 		// closeButtonMode:'invisible',
+	// 		// globalOverlay: cordova.file.applicationDirectory+'www/img/overlay-HHH.png',
+	// 		// globalOverlayMode:'cover',
+	// 		// hideCloseButton:false,
+	// 		overlayImageFolder:  cordova.file.applicationDirectory+'www/vuforia/overlays/mortonTux/',
+	// 		targetList:[
+	// 			"vumark-0000",
+	// 			"vumark-1111",
+	// 			"vumark-2222",
+	// 			"vumark-3333",
+	// 			"vumark-4444",
+	// 			"vumark-5555",
+	// 			"vumark-6666",
+	// 			"vumark-7777",
+	// 			"vumark-8888",
+	// 			"vumark-9999",
+	// 			"vumark-aaaa",
+	// 			"vumark-bubu",
+	// 			"vumark-caca",
+	// 			"vumark-coco",
+	// 			"vumark-dada",
+	// 			"vumark-eeee",
+	// 			"vumark-iiii",
+	// 			"vumark-mama",
+	// 			"vumark-mamy",
+	// 			"vumark-mimi",
+	// 			"vumark-oooo",
+	// 			"vumark-papa",
+	// 			"vumark-papy",
+	// 			"vumark-pipi",
+	// 			"vumark-popo"
+	// 		]
+	// 		// ],
+	// 		// maxSimultaneousTargets:10
+	// 	};
+	// 	console.log('Launching camera with options:', options);
+	// 	VuforiaAR.openFinder(options, app.viewSuccess, app.viewFailure);
+	// },
+	// startIOS4: function() {
+	// 	console.log("Let's play with AR!");
+	//
+	// 	var options = {
+	// 		vuforiaLicense: vuforiaLicenseKey,
+	// 		databaseXmlFile: cordova.file.applicationDirectory+'www/vuforia/MortonTuxedos.xml',
+	// 		// globalOverlay: cordova.file.applicationDirectory+'www/img/overlay-HHH.png',
+	// 		// globalOverlayMode:'contain',
+	// 		// closeButtonMode:'invisible',
+	// 		// hideCloseButton:false,
+	// 		// overlayImageFolder:  cordova.file.applicationDirectory+'www/vuforia/overlays/',
+	// 		targetList:[
+	// 			"vumark-0000",
+	// 			"vumark-1111",
+	// 			"vumark-2222",
+	// 			"vumark-3333",
+	// 			"vumark-4444",
+	// 			"vumark-5555",
+	// 			"vumark-6666",
+	// 			"vumark-7777",
+	// 			"vumark-8888",
+	// 			"vumark-9999",
+	// 			"vumark-aaaa",
+	// 			"vumark-bubu",
+	// 			"vumark-caca",
+	// 			"vumark-coco",
+	// 			"vumark-dada",
+	// 			"vumark-eeee",
+	// 			"vumark-iiii",
+	// 			"vumark-mama",
+	// 			"vumark-mamy",
+	// 			"vumark-mimi",
+	// 			"vumark-oooo",
+	// 			"vumark-papa",
+	// 			"vumark-papy",
+	// 			"vumark-pipi",
+	// 			"vumark-popo"
+	// 		],
+	// 		maxSimultaneousTargets:2
+	// 	};
+	// 	console.log('Launching camera with options:', options);
+	// 	VuforiaAR.openIRFinder(options, app.viewSuccess, app.viewFailure);
+	// },
+	//
+	//
+	//
+	//
+	//
+	// startAndroid1: function() {
+	// 	console.log("Let's start this overlayed view!");
+	//
+	// 	var viewOptions = {
+	// 		vuforiaLicense: vuforiaLicenseKey,
+	// 		// databaseXmlFile: cordova.file.applicationStorageDirectory+'vuforia/Vuforia.xml',
+	// 		databaseXmlFile: cordova.file.externalApplicationStorageDirectory+'files/happiVumark.xml',
+	// 		// globalOverlay: cordova.file.externalApplicationStorageDirectory+'files/overlay-VVV.png',
+	// 		// globalOverlayMode:'stretch',
+	// 		// closeButtonMode:'',
+	// 		overlayImageFolder:  cordova.file.externalApplicationStorageDirectory+'files/overlays/happiVumark/',
+	// 		targetList:[
+	// 			"vumark-0",
+	// 			"vumark-13",
+	// 			"vumark-28",
+	// 			"vumark-39"
+	// 		],
+	// 		maxSimultaneousTargets:2
+	// 	};
+	// 	VuforiaAR.openFinder(viewOptions, app.viewSuccess, app.viewFailure);
+	// },
+	// startAndroid2: function() {
+	// 	console.log("Let's start this overlayed view!");
+	//
+	// 	var viewOptions = {
+	// 		vuforiaLicense: vuforiaLicenseKey,
+	// 		databaseXmlFile: cordova.file.externalApplicationStorageDirectory+'files/happinovTestAR.xml',
+	// 		// globalOverlay: cordova.file.externalApplicationStorageDirectory+'files/overlay-VVV.png',
+	// 		overlayImageFolder:  cordova.file.externalApplicationStorageDirectory+'files/overlays/happinovTestAR/',
+	// 		// globalOverlayMode:'cover',
+	// 		// closeButtonMode:'transparent',
+	// 		targetList:[
+	// 			"Es11BondJamesBond",
+	// 			"Es12Identification",
+	// 			"Es20FemmesFatales",
+	// 			"EsAgent2",
+	// 			"EsAgent3"
+	// 		],
+	// 		maxSimultaneousTargets:2
+	// 	};
+	// 	VuforiaAR.openFinder(viewOptions, app.viewSuccess, app.viewFailure);
+	// },
+	// startAndroid3: function() {
+	// 	console.log("Let's start this overlayed view!");
+	//
+	// 	var viewOptions = {
+	// 		vuforiaLicense: vuforiaLicenseKey,
+	// 		databaseXmlFile: cordova.file.externalApplicationStorageDirectory+'files/MortonTuxedos.xml',
+	// 		// globalOverlay: cordova.file.externalApplicationStorageDirectory+'files/overlay-HHH.png',
+	// 		// globalOverlay:'',
+	// 		// globalOverlayMode:'',
+	// 		// closeButtonMode:'',
+	// 		overlayImageFolder:  cordova.file.externalApplicationStorageDirectory+'files/overlays/mortonTux/',
+	// 		targetList:[
+	// 			"vumark-0000",
+	// 			"vumark-1111",
+	// 			"vumark-2222",
+	// 			"vumark-3333",
+	// 			"vumark-4444",
+	// 			"vumark-5555",
+	// 			"vumark-6666",
+	// 			"vumark-7777",
+	// 			"vumark-8888",
+	// 			"vumark-9999",
+	// 			"vumark-aaaa",
+	// 			"vumark-bubu",
+	// 			"vumark-caca",
+	// 			"vumark-coco",
+	// 			"vumark-dada",
+	// 			"vumark-eeee",
+	// 			"vumark-iiii",
+	// 			"vumark-mama",
+	// 			"vumark-mamy",
+	// 			"vumark-mimi",
+	// 			"vumark-oooo",
+	// 			"vumark-papa",
+	// 			"vumark-papy",
+	// 			"vumark-pipi",
+	// 			"vumark-popo"
+	// 		]
+	// 		// ],
+	// 		// maxSimultaneousTargets:2
+	// 	};
+	// 	VuforiaAR.openFinder(viewOptions, app.viewSuccess, app.viewFailure);
+	// },
+	// startAndroid4: function() {
+	// 	console.log("Let's start this overlayed view!");
+	//
+	// 	var viewOptions = {
+	// 		vuforiaLicense: vuforiaLicenseKey,
+	// 		databaseXmlFile: cordova.file.externalApplicationStorageDirectory+'files/MortonTuxedos.xml',
+	// 		// globalOverlay: cordova.file.externalApplicationStorageDirectory+'files/overlay-HHH.png',
+	// 		// globalOverlayMode:'contain',
+	// 		// closeButtonMode:'invisible',
+	// 		targetList:[
+	// 			"vumark-0000",
+	// 			"vumark-1111",
+	// 			"vumark-2222",
+	// 			"vumark-3333",
+	// 			"vumark-4444",
+	// 			"vumark-5555",
+	// 			"vumark-6666",
+	// 			"vumark-7777",
+	// 			"vumark-8888",
+	// 			"vumark-9999",
+	// 			"vumark-aaaa",
+	// 			"vumark-bubu",
+	// 			"vumark-caca",
+	// 			"vumark-coco",
+	// 			"vumark-dada",
+	// 			"vumark-eeee",
+	// 			"vumark-iiii",
+	// 			"vumark-mama",
+	// 			"vumark-mamy",
+	// 			"vumark-mimi",
+	// 			"vumark-oooo",
+	// 			"vumark-papa",
+	// 			"vumark-papy",
+	// 			"vumark-pipi",
+	// 			"vumark-popo"
+	// 		],
+	// 		maxSimultaneousTargets:2
+	// 	};
+	// 	VuforiaAR.openIRFinder(viewOptions, app.viewSuccess, app.viewFailure);
+	// },
 
 
 	viewSuccess: function(result) {
