@@ -66,7 +66,7 @@ var app = {
 			databaseXmlFile: cordova.file.applicationDirectory+'www/vuforia/happinovTestAR.xml',
 			overlayMappingOverride:{
 				Es11BondJamesBond:{
-					overlay: cordova.file.applicationDirectory+'www/vuforia/overlays/happiVumark/vumark-0.jpg'},
+					overlay: cordova.file.applicationDirectory+'www/vuforia/overlays/happiVumark/titi.jpg'},
 				Es12Identification:{
 					overlay: cordova.file.applicationDirectory+'www/vuforia/overlays/happiVumark/vumark-0.jpg'},
 				Es20FemmesFatales:{

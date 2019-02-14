@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "cordova-ios": "^4.5.4",
+    "cordova-plugin-add-swift-support": "^1.7.2",
     "cordova-plugin-layouthelper": "git+ssh://git@bitbucket.org/happinov/cordova-plugin-layouthelper.git",
     "cordova-plugin-vuforia": "file:///Users/nicod/Development/projects/happi/cordova-plugin-vuforia",
     "cordova-plugin-vuforia-sdk-7-5-20": "git+ssh://git@bitbucket.org/coqsenpate/cordova-plugin-vuforia-sdk-7-5-20.git",
